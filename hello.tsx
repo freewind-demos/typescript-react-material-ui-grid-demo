@@ -17,18 +17,16 @@ class MyList extends React.Component {
   }
 
   render() {
-    return <Grid container spacing={16} className='container'>
-      <Grid item xs={3} className='item'>
-        <Grid container className='container'>
+    return <Grid container spacing={16}>
+      <Grid item xs={3}>
+        <Grid container>
           <Grid item xs={6} className='item'>Select1</Grid>
           <Grid item xs={6} className='item'>Select2</Grid>
         </Grid>
       </Grid>
-      <Grid item xs={4} className='item'>
-        <Grid container className='container'>
-          <Grid item xs={3} className='item'>Button1</Grid>
-          <Grid item xs className='item'>Button2</Grid>
-        </Grid>
+      <Grid item container xs={4}>
+        <Grid item xs={3} className='item'>Button1</Grid>
+        <Grid item xs className='item'>Button2</Grid>
       </Grid>
       <Grid item xs className='item'>Textarea1</Grid>
     </Grid>
