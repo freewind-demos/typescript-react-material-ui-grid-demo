@@ -15,5 +15,6 @@ export default function MyList() {
     </Grid>
     <Grid item xs className='item'>Textarea1</Grid>
     <Grid item xs className='item'>Textarea2</Grid>
+    <Grid item xs={1} className='item'>Textarea3</Grid>
   </Grid>
 }

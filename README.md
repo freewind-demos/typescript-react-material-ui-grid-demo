@@ -24,6 +24,10 @@ TypeScript React "material-ui" Grid Demo
 1. 如果同时指定了多个breakpoint，则以“更精确”的为准。比如指定了`xs=10 sm=5`，
    - 则在大于600px的屏幕中，`sm=5`有效
    - 则小于600px的屏幕中，`xs=10`有效
+1. Material中的Grid没有Row的概念，所以如果想让一个item右侧有空白，比较麻烦
+   - 要么弄一个空的item，设置好xs的值，用来占满剩余空间
+   - 要么用多个Grid container
+   - https://stackoverflow.com/questions/50610049/how-to-organize-material-ui-grid-into-rows
 
 ```
 npm install
